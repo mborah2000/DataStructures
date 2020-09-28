@@ -8,6 +8,7 @@
 	- When the shift of the first guard(i) is a subset of the second guard(j)'s shift 
 	- When the shift of the second guard(j) is a subset of the first guard(i)'s shift 
 5. Remove the overlap of the shifts to get the lone time value
-6. Also store the total overlap value in a map. 
+6. Also store the total overlap value in a map which takes set of the guard pair as key and overlap as value 
 7. Calculate the total coverage of the shifts by adding the total lone time of all guards and the total overlap values
-8. Calculate the maximum coverage by finding the largest value of the total coverage minus lone time.
+8. Calculate the maximum coverage by finding the largest value of the total coverage minus lone time
+9. Using Brute forse mechanism , hence heavy input files such as 5.in and 6.in are giving OutOfMemory error on my windows machine. Therefore, empty outputs forthese two scenarios
